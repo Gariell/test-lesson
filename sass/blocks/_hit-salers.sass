@@ -1,5 +1,17 @@
 .hits
-  margin-bottom: 30px
+  margin-bottom: 48px
+  
+  &-bg
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      top: 7px
+      right: 0
+      width: 60%
+      height: 8px
+      background: #1B749F
+      
   &__title
     position: relative
     text-transform: uppercase
@@ -72,10 +84,8 @@
           z-index: -1
     &__btn
       margin-top: 8px
-      width: 152px
       height: 32px
       font-size: 14px
-      color: #fff
 @media (max-width:1285px)
   .hits
     &__title
@@ -94,3 +104,61 @@
         &_new
         &_old
       &__btn
+@media (max-width:1035px) 
+  .hits
+    margin-bottom: 0
+    &-bg
+      position: relative
+      &::after
+        content: ""
+        position: absolute
+        top: 6px
+        right: 0
+        width: 40%
+        height: 8px
+        background: #1B749F
+        z-index: -1
+    &__title
+      font-size: 18px
+      margin-left: 0
+      &::after
+        width: 45%
+    &-item
+      padding: 0
+      &s
+      &__img
+        margin-bottom: -2px
+        width: 111px
+      &__title
+        margin-top: -5px
+        line-height: 1.2
+        font-size: 14px
+      &__reviews
+        margin: 0
+        &-counter
+          & span
+            opacity: 0.5
+            &:nth-child(2)
+              display: none
+      &__rating
+        &__active
+      &__price
+        display: flex
+        flex-direction: column-reverse
+        position: relative
+        padding-top: 10px
+        
+        &_new
+          font-size: 16px
+        &_old
+          top: 0
+          left: 0
+          margin: 0
+          position: absolute
+          opacity: 0.5
+          &::after
+            height: 1px
+            background: #000
+            // width: 40%
+      &__btn
+        display: none

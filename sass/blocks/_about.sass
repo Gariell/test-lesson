@@ -19,7 +19,7 @@
     margin-left: 2px
     &-brends
       flex-direction: column
-      padding-bottom: 34px
+      padding-bottom: 38px
       width: 96%
     &-news
       padding-bottom: 36px
@@ -35,6 +35,10 @@
     margin-top: -8px
     margin-bottom: 0px
     font-weight: 500
+    & img
+      display: block
+    & svg
+      display: none
   &__text
     line-height: 1.6
     margin-bottom: 0
@@ -55,31 +59,86 @@
         border-bottom: 1px solid #1B749F
   &__video
     margin-left: 16px
+    
+    &s
+      display: flex
+    &_two
+      display: none
     &:hover
       box-shadow: 0 0 5px 1px #1f8ac0
 
 
-@media (max-width:1285px)
+@media (max-width:1035px)
   .about
-    &-brends
+    background: #fff
+    padding-top: 0
+    margin-bottom: 72px
+    &-brend
+      &s
+        &-slider
+        margin-top: 10px
       &-slider
+        
+        &__link
+          height: 65px
+          & img 
+            height: 100%
     &-bg
+      background: #fff
+      margin-bottom: 0
       &:last-child
       &-reviews
       &-news
     &-item
+      flex-direction: column
+      padding-bottom: 0
+      padding-top: 30px
+      
       &-news
+        padding-top: 19px
       &-reviews
+      &-brends
+        padding-top: 13px
     &-bloсktext
       padding: 0
+      color: #000
       &-reviews
     &__title
+      text-align: center
+      &_news
+        padding-bottom: 4px
+      & svg
+        display: block
+        margin: 0 auto
+      & img 
+        display: none
     &__text
+      margin-top: 14px
+      line-height: 1.5
+      &_news
+        display: none
+      & span 
+        display: none
     &__link
+      display: none
       &-review
         margin-top: -20px
       &-news
     &__video
       height: 100%
+      display: block
+      margin-left: 0
+      margin-right: 16px 
+      &s
+        display: flex
+        overflow: auto
+        margin-top: 10px
+
+        -ms-overflow-style: none
+        &::-webkit-scrollbar
+          width: 0
+    &_two
+      display: block
+          
 
     

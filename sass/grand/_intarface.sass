@@ -19,6 +19,10 @@ button
   cursor: pointer
   background: transparent
   border: none
+  outline: none
+  &:focus
+    border: none
+    outline: none
 
 input
   &:focus
@@ -29,11 +33,22 @@ input
 
 .blue-btn
   background: #1B749F
+  width: 152px
+  height: 40px
+  color: #fff
+  font-weight: 500
   &:hover
     background: lighten(#1B749F, 10)
 
+.footer-catalog-list_noactive
+  height: 0
+  opacity: 0
+  transition: 0.5
+
 .color-red
   color: #B03030
+
+
 
 .container
   position: relative
