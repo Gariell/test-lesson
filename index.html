@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="pictures/favicon/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Mir sporta -  онлайн-гипермаркет спортивных тренажёров</title>
+</head>
+<body>
+ 
+  <header class="header-bg">
+    <div class="container">
+
+      <div class="header">
+        <div class="header_top">
+
+          <button class="header_top__burger-btn">
+            <img src="pictures/icon/burger.svg" alt="burger-btn">
+          </button>
+
+          <img src="pictures/images/nav/logo-mob.svg" class="header_top__logo" alt="logo">
+
+          <button class="header_top__location-btn">
+            <img src="pictures/icon/map-arrow.svg" alt="arrow-btn"> <span class="header_top__location-text1">Ваш регион:</span> <span class="header_top__location-text2 ">г.&nbsp; </span> <span id="location">Владимир</span>
+          </button>
+
+          <div class="header_top-nav">
+            <a href="#" class="header_top-nav__link">Контакты</a>
+            <a href="#" class="header_top-nav__link">Акции</a>
+            <a href="#" class="header_top-nav__link">Бесплатная доставка</a>
+          </div>
+
+          <div class="header_top-user">
+            <a href="#" class="header_top-user__link"><img src="pictures/icon/user.svg" alt="user-btn" class="header_top-user__link-img"><span class="header_top-user__link_1">Мой </span> <span class="header_top-user__link_2">аккаунт</span></a>
+            <a href="#" class="header_top-user__link"><img src="pictures/icon/сart.svg" alt="cart-btn" class="header_top-user__link-img"><span class="header_top-user__link_2">Корзина</span> <span class="header_top-user__link_1">пуста</span></a>
+          </div>
+
+        </div>
+      
+
+        <div class="header_middle"> 
+
+          <img src="pictures/images/nav/Logo.png" alt="Logo" class="header_middle__logo">
+          
+          <div class="header_middle-call">
+            <div class="header_middle-call-numbers">
+              <div class="header_middle-call-numbers__icon"><img src="pictures/icon/phone.svg" alt="phone" class=""></div>
+              <ul>
+                <li class="header_middle-call-nambers__namber"><a href="tel:88003501095">8(800) 350-10-95</a></li>
+                <li class="header_middle-call-nambers__namber"><a href="tel:88003501095">8(800) 350-10-95</a></li>
+                <li class="header_middle-call-numbers__time">Бесплатно с 8:00 до 23:00</li>
+              </ul>
+            </div>
+            <button class="header_middle-call__btn blue-btn">Заказать звонок</button>
+          </div>
+
+          <div class="header_middle__search-wrap">
+            <input class="header_middle__search" placeholder="Найти товары"></input>
+            <button class=" header_middle__search-btn blue-btn "> <img src="pictures/icon/search.svg" alt="ser"></button>
+          </div>
+
+          <div class="header_middle__shop-action">
+            <a href="" class="header_middle__shop-action-btn"><img src="pictures/icon/graph.svg" alt="gr"></a>
+            <a href="" class="header_middle__shop-action-btn"><img src="pictures/icon/heart.svg" alt="hr"></a>
+            <a href="" class="header_middle__shop-action-btn"><img src="pictures/icon/watch.svg" alt="wch"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="header_bottom-bg">
+      <div class="container">
+        <nav class="header_bottom">
+          <button class="header_bottom__catalog-btn"><img src="pictures/icon/catalog.svg" alt="cat">  Полный каталог</button>
+          <div class="header_bottom-menu">
+            <a href="" class="header_bottom-menu__link">Беговые дорожки</a>
+            <a href="" class="header_bottom-menu__link">Батуты</a>
+            <a href="" class="header_bottom-menu__link">Детские городки</a>
+            <a href="" class="header_bottom-menu__link">Силовые тренажеры</a>
+            <a href="" class="header_bottom-menu__link">Эллипсы</a>
+          </div>
+
+          <div class="header_bottom-menu_mobile">
+            <a href="#" class="header_bottom-menu_mobile__link"><img src="pictures/icon/burger-books.svg" alt="1">Каталог</a>
+            <a href="#" class="header_bottom-menu_mobile__link"><img src="pictures/icon/burger-books.svg" alt="2">Скидки</a>
+            <a href="#" class="header_bottom-menu_mobile__link"><img src="pictures/icon/burger-books.svg" alt="3">Доставка</a>
+            <a href="#" class="header_bottom-menu_mobile__link"><img src="pictures/icon/burger-books.svg" alt="4">Скидки</a>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <div class="hero__baner"><img src="pictures/images/hero/banner 2.jpg" alt="baner 1" class="hero__baner-img"></div>
+      <div class="hero__baner"><img src="pictures/images/hero/banner 1.jpg" alt="baner 2" class="hero__baner-img"></div>
+      <div class="hero__baner"><img src="pictures/images/hero/banner 3.jpg" alt="baner 3" class="hero__baner-img"></div>
+    </div>
+  </div>
+
+  <main>
+
+    <div class="container">
+      <section class="categories">
+        <h1 class="categories__title"> <span>онлайн-гипермаркет</span><span>спортивных тренажёров</span></h1>
+
+        <div class="categories-items">
+
+          <a href="#" class="categories-item">
+            <div class=""><img src="pictures/images/categories/cat1.png" alt="cat" class="categories-item__img"></div>
+            <div class="categories-item-text">
+              <span class="categories-item__counter">1223 товара</span>
+              <h3 class="categories-item__title">Беговые дорожки</h3>
+            </div>
+          </a>
+          <a href="#" class="categories-item">
+            <div class=""><img src="pictures/images/categories/cat2.png" alt="cat" class="categories-item__img"></div>
+            <div class="categories-item__text">
+              <span class="categories-item__counter">1223 товара</span>
+              <h3 class="categories-item__title">Виброплатформы</h3>
+            </div>
+          </a>
+          <a href="#" class="categories-item">
+            <div class=""><img src="pictures/images/categories/cat3.png" alt="cat" class="categories-item__img"></div>
+            <div class="categories-item-text">
+              <span class="categories-item__counter">1223 товара</span>
+              <h3 class="categories-item__title">Велотренажеры</h3>
+            </div>
+          </a>
+          <a href="#" class="categories-item">
+            <div class=""><img src="pictures/images/categories/cat4.png" alt="cat" class="categories-item__img"></div>
+            <div class="categories-item-text">
+              <span class="categories-item__counter">1223 товара</span>
+              <h3 class="categories-item__title">Эллиптические тренажеры</h3>
+            </div>
+          </a>
+          <a href="#" class="categories-item">
+            <div class=""><img src="pictures/images/categories/cat5.png" alt="cat" class="categories-item__img"></div>
+            <div class="categories-item-text">
+              <span class="categories-item__counter">1223 товара</span>
+              <h3 class="categories-item__title">Силовое оборудование</h3>
+            </div>
+          </a>
+          <a href="#" class="categories-item">
+            <div class=""><img src="pictures/images/categories/cat6.png" alt="cat" class="categories-item__img"></div>
+            <div class="categories-item-text">
+              <span class="categories-item__counter">1223 товара</span>
+              <h3 class="categories-item__title">Гребные тренажеры</h3>
+            </div>
+          </a>
+          <a href="#" class="categories-item">
+            <div class=""><img src="pictures/images/categories/cat7.png" alt="cat" class="categories-item__img"></div>
+            <div class="categories-item-text">
+              <span class="categories-item__counter">1223 товара</span>
+              <h3 class="categories-item__title">Батуты</h3>
+            </div>
+          </a>
+          <a href="#" class="categories-item">
+            <img src="pictures/icon/cat-Arrow.svg" alt="arrow" class="categories-item__img">
+            
+            <h3 class="categories-item__title">Остальные категории</h3>
+          </a>
+        </div>
+      </section>
+    </div>
+      <section class="hits container">
+        <div class=" swiper-container swiper-container_one ">
+        <h2 class="hits__title">Хиты продаж</h2>
+        
+          <div class="hits-items swiper-wrapper">
+
+            <div class="hits-item swiper-slide">
+              <img src="pictures/images/hit-salers/hit.png" alt="hit-salers" class="hits-item__img">
+              <h3 class="hits-item__title">Беговая дорожка <br> Nordic track</h3>
+              <div class="hits-item__reviews">
+                <div class="hits-item__rating">
+                  <span class="hits-item__rating_active"></span>	
+                  <span class="hits-item__rating_active"></span>    
+                  <span class="hits-item__rating_active"></span>  
+                  <span class="hits-item__rating_active"></span>
+                  <span></span>
+                </div>
+                <a class="hits-item__reviews-counter"> <span>8</span> отзывов  </a>
+              </div>
+              <div class="hits-item__price">
+                <span class="hits-item__price_new color-red">42 789 ₽</span><span class="hits-item__price_old">50 210 ₽</span>
+              </div>
+              <button class="hits-item__btn blue-btn">В корзину</button>
+            </div>
+            <div class="hits-item swiper-slide">
+              <img src="pictures/images/hit-salers/hit.png" alt="hit-salers" class="hits-item__img">
+              <h3 class="hits-item__title">Беговая дорожка <br> Nordic track</h3>
+              <div class="hits-item__reviews">
+                <div class="hits-item__rating">
+                  <span class="hits-item__rating_active"></span>	
+                  <span class="hits-item__rating_active"></span>    
+                  <span class="hits-item__rating_active"></span>  
+                  <span class="hits-item__rating_active"></span>
+                  <span></span>
+                </div>
+                <a class="hits-item__reviews-counter"> <span>8</span> отзывов  </a>
+              </div>
+              <div class="hits-item__price">
+                <span class="hits-item__price_new">42 789 ₽</span><span class="hits-item__price_old"></span>
+              </div>
+              <button class="hits-item__btn blue-btn">В корзину</button>
+            </div>
+            <div class="hits-item swiper-slide">
+              <img src="pictures/images/hit-salers/hit.png" alt="hit-salers" class="hits-item__img">
+              <h3 class="hits-item__title">Беговая дорожка <br> Nordic track</h3>
+              <div class="hits-item__reviews">
+                <div class="hits-item__rating">
+                  <span class="hits-item__rating_active"></span>	
+                  <span class="hits-item__rating_active"></span>    
+                  <span class="hits-item__rating_active"></span>  
+                  <span class="hits-item__rating_active"></span>
+                  <span></span>
+                </div>
+                <a class="hits-item__reviews-counter"> <span>8</span> отзывов  </a>
+              </div>
+              <div class="hits-item__price">
+                <span class="hits-item__price_new color-red">42 789 ₽</span><span class="hits-item__price_old">50 210 ₽</span>
+              </div>
+              <button class="hits-item__btn blue-btn">В корзину</button>
+            </div>
+            <div class="hits-item swiper-slide">
+              <img src="pictures/images/hit-salers/hit.png" alt="hit-salers" class="hits-item__img">
+              <h3 class="hits-item__title">Беговая дорожка <br> Nordic track</h3>
+              <div class="hits-item__reviews">
+                <div class="hits-item__rating">
+                  <span class="hits-item__rating_active"></span>	
+                  <span class="hits-item__rating_active"></span>    
+                  <span class="hits-item__rating_active"></span>  
+                  <span class="hits-item__rating_active"></span>
+                  <span></span>
+                </div>
+                <a class="hits-item__reviews-counter"> <span>8</span> отзывов  </a>
+              </div>
+              <div class="hits-item__price">
+                <span class="hits-item__price_new">42 789 ₽</span><span class="hits-item__price_old"></span>
+              </div>
+              <button class="hits-item__btn blue-btn">В корзину</button>
+            </div>
+            <div class="hits-item swiper-slide">
+              <img src="pictures/images/hit-salers/hit.png" alt="hit-salers" class="hits-item__img">
+              <h3 class="hits-item__title">Беговая дорожка <br> Nordic track</h3>
+              <div class="hits-item__reviews">
+                <div class="hits-item__rating">
+                  <span class="hits-item__rating_active"></span>	
+                  <span class="hits-item__rating_active"></span>    
+                  <span class="hits-item__rating_active"></span>  
+                  <span class="hits-item__rating_active"></span>
+                  <span></span>
+                </div>
+                <a class="hits-item__reviews-counter"> <span>8</span> отзывов  </a>
+              </div>
+              <div class="hits-item__price">
+                <span class="hits-item__price_new color-red">42 789 ₽</span><span class="hits-item__price_old">50 210 ₽</span>
+              </div>
+              <button class="hits-item__btn blue-btn">В корзину</button>
+            </div>
+            <div class="hits-item swiper-slide">
+              <img src="pictures/images/hit-salers/hit.png" alt="hit-salers" class="hits-item__img">
+              <h3 class="hits-item__title">Беговая дорожка <br> Nordic track</h3>
+              <div class="hits-item__reviews">
+                <div class="hits-item__rating">
+                  <span class="hits-item__rating_active"></span>	
+                  <span class="hits-item__rating_active"></span>    
+                  <span class="hits-item__rating_active"></span>  
+                  <span class="hits-item__rating_active"></span>
+                  <span></span>
+                </div>
+                <a class="hits-item__reviews-counter"> <span>8</span> отзывов  </a>
+              </div>
+              <div class="hits-item__price">
+                <span class="hits-item__price_new">42 789 ₽</span><span class="hits-item__price_old"></span>
+              </div>
+              <button class="hits-item__btn blue-btn">В корзину</button>
+            </div>
+            <div class="hits-item swiper-slide">
+              <img src="pictures/images/hit-salers/hit.png" alt="hit-salers" class="hits-item__img">
+              <h3 class="hits-item__title">Беговая дорожка <br> Nordic track</h3>
+              <div class="hits-item__reviews">
+                <div class="hits-item__rating">
+                  <span class="hits-item__rating_active"></span>	
+                  <span class="hits-item__rating_active"></span>    
+                  <span class="hits-item__rating_active"></span>  
+                  <span class="hits-item__rating_active"></span>
+                  <span></span>
+                </div>
+                <a class="hits-item__reviews-counter"> <span>8</span> отзывов  </a>
+              </div>
+              <div class="hits-item__price">
+                <span class="hits-item__price_new color-red">42 789 ₽</span><span class="hits-item__price_old">50 210 ₽</span>
+              </div>
+              <button class="hits-item__btn blue-btn">В корзину</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-button-next swiper-button-next_one"></div>
+        <div class="swiper-button-prev swiper-button-prev_one"></div>
+
+      </section>
+
+    
+
+    <div class="about">
+      <div class="about-bg about-bg-reviews">
+        <div class="container">
+
+          <div class="about-item">
+            <div class="about-bloсktext about-bloсktext-reviews">
+              <div class=""><img src="pictures/images/about/video-logo.png" class="about__title" alt="video"></div>
+              <p class="about__text">MIR-SPORTA.COM специализируется на продаже спортивного оборудования, тренажеров и товаров для&nbsp;активного отдыха. MIR-SPORTA.COM является официальным дилером производителей спортивного&nbsp;оборудования. Пункты выдачи заказов компании MIR-SPORTA.COM находятся более чем&nbsp;в&nbsp;150&nbsp;городах России.</p>
+              <a class="about__link about__link-review" >Посмотреть все отзывы</a>
+            </div>
+            <a href="https://www.youtube.com/embed/w-9xQQC1SAU" class="about__video">
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/w-9xQQC1SAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <img src="pictures/images/about/video-review.png" alt="video">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="about-bg ">
+        <div class="container">
+
+          <div class="about-item about-item-news">
+            <div class="about-bloсktext about-bloсktext-news">
+              <div class=""><img src="pictures/images/about/news-logo.png" class="about__title" alt="video"></div>
+              <p class="about__text">MIR-SPORTA.COM специализируется на продаже спортивного оборудования, тренажеров и товаров для активного отдыха. </p>
+              <a class="about__link about__link-news" >Посмотреть все новости</a>
+            </div>
+            <a href="https://www.youtube.com/embed/w-9xQQC1SAU" class="about__video">
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/w-9xQQC1SAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <img src="pictures/images/about/video-review.png" alt="video">
+            </a>
+            <a href="https://www.youtube.com/embed/w-9xQQC1SAU" class="about__video">
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/w-9xQQC1SAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <img src="pictures/images/about/video-review.png" alt="video">
+            </a>
+          </div>
+
+
+          <!-- стили в vidgets -->
+          <div class="vidget-session">
+            <span class="vidget-session__counter" id="session-counter">402631</span>
+            <span class="vidget-session__text">номер <br> сессии</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="about-bg">
+        <div class="container">
+
+          <div class="about-item about-item-brends swiper-container swiper-container_two">
+            <div class=""><img src="pictures/images/about/brand-logo.png" class="about__title" alt="video"></div>
+            <div class="about-brends-slider swiper-wrapper">
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/adidas.png" alt="adidas"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/kettler.png" alt="kettler"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/adidas.png" alt="adidas"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/kettler.png" alt="kettler"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/adidas.png" alt="adidas"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/kettler.png" alt="kettler"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/adidas.png" alt="adidas"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/kettler.png" alt="kettler"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/kettler.png" alt="kettler"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/adidas.png" alt="adidas"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/adidas.png" alt="adidas"></a>
+              <a href="#" class="about-brend-slider__link swiper-slide"><img src="pictures/images/about/kettler.png" alt="kettler"></a>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-button-next_two"></div>
+          <!-- <div class="swiper-button-next swiper-button-prev_two"></div> -->
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-bg">
+    <div class="container">
+      <div class="footer">
+
+        <div class="footer-map">
+          <span class="footer-map__text">Более 10 000 заказов от <br>Ялты до Владивостока</span>
+          <img src="pictures/images/footer/russia-map.png" alt="" class="footer-map__img">
+        </div>
+        
+        <div class="footer-info">
+          <div class="footer__logo">
+            <img src="pictures/images/footer/logo.png" alt="logo">
+          </div>
+          
+          <a href="mailto: info@mir-sporta.com" class="footer-info__contact"><img src="pictures/icon/mail.png" alt="mail">info@mir-sporta.com</a>
+          <a href="tel:88003501095" class="footer-info__contact"><img src="pictures/icon/phone-white.svg" alt="phone"> 8(800) 350-10-95</a>
+          <a href="tel:88003501095" class="footer-info__contact"><img src="pictures/icon/phone-white.svg" alt="phone"> 8(800) 350-10-95</a>
+          <span class="footer-info__time">Бесплатно с 8:00 до 23:00</span>
+          <button class="footer-info__btn blue-btn">Заказать звонок</button>
+          <span class="footer-info__adress">Адрес: 117630, г. Москва, <br> Старокалужское шоссе, д.62 <br><br>
+            ОГРН: 1177746083305</span>
+          <div class="footer-info-soc">
+            <span class="footer-info-soc__title">Мы в соц сетях</span>
+            <div class="footer-info-soc-links">
+              <a href="#" class="footer-info-soc-link"><img src="pictures/images/footer/soc/VK.png" alt="vkon"></a>
+              <a href="#" class="footer-info-soc-link"><img src="pictures/images/footer/soc/OK.png" alt="odn"></a>
+              <a href="#" class="footer-info-soc-link"><img src="pictures/images/footer/soc/Instagram.png" alt="insta"></a>
+              <a href="#" class="footer-info-soc-link"><img src="pictures/images/footer/soc/facebook.png" alt="face"></a>
+              <a href="#" class="footer-info-soc-link"><img src="pictures/images/footer/soc/Youtube.png" alt="yout"></a>
+            </div>
+
+          </div>
+          
+        </div>
+        <div class="footer-catalog">
+          <h3 class="footer-catalog__title">Каталог</h3>
+          <ul class="footer-catalog-list">
+
+            <li class="footer-catalog-list__element"><a href="#">Беговые дорожки</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Виброплатформы</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Велотренажёры</a></li>
+
+            <li class="footer-catalog-list__element"><a href="#">Эллиптические тренажёры</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Степперы</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Гребные тренажёры</a></li>
+
+            <li class="footer-catalog-list__element"><a href="#">Силовые тренажёры</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Батуты</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Массажное оборудование</a></li>
+
+            <li class="footer-catalog-list__element"><a href="#">Детские городки</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Аксеессуары к тренажёрам </a></li>
+  
+          </ul>
+        </div>
+        <div class="footer-catalog footer-help">
+          <h3 class="footer-catalog__title">Помощь</h3>
+          <ul class="footer-catalog-list">
+
+            <li class="footer-catalog-list__element"><a href="#">Бесплатная доставка</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Гарантии</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Оплата</a></li>
+
+            <li class="footer-catalog-list__element"><a href="#">Сборка</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Отзывы</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Наш коллектив</a></li>
+
+            <li class="footer-catalog-list__element"><a href="#">Сотрудничество</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Контакты</a></li>
+            <li class="footer-catalog-list__element"><a href="#">Акции</a></li>
+  
+          </ul>
+        </div>
+        
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-pay">
+          
+          <div class="footer-bottom-pay-links">
+            <a href="#" class="footer-bottom-pay-link"><img src="pictures/images/footer/pay/Visa.png" alt="visa"></a>
+            <a href="#" class="footer-bottom-pay-link"><img src="pictures/images/footer/pay/Mastercard.png" alt="mc"></a>
+            <a href="#" class="footer-bottom-pay-link"><img src="pictures/images/footer/pay/mir.png" alt="mir"></a>
+            <div class="footer-bottom-pay-link"><img src="pictures/images/footer/pay/divider.png" alt="|"></div>
+            <a href="#" class="footer-bottom-pay-link"><img src="pictures/images/footer/pay/rus-mail.png" alt="pr"></a>
+            <a href="#" class="footer-bottom-pay-link"><img src="pictures/images/footer/pay/dellin.png" alt="di"></a>
+            <a href="#" class="footer-bottom-pay-link"><img src="pictures/images/footer/pay/cdek.png" alt="cdek"></a>
+
+          </div>
+        </div>
+        <p class="footer-bottom__text">Copyright © Mir-Sporta.com 2013-2019 Любое несоответствие информации о продукте на сайте с фактом – лишь досадное недоразумение, звоните – уточняйте у менеджеров. Вся&nbsp;информация на сайте носит справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской <br> Федерации. </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <script src="js/library/jquery-3.4.1.min.js"></script> -->
+
+  
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/library/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- <script>
+    new WOW().init();
+  </script> -->
+
+  <script>
+    var mySwiper = new Swiper ('.swiper-container_one', {
+      slidesPerView: 4.5,
+      loop: true,
+      spaceBetween: 15,
+
+      navigation: {
+        nextEl: '.swiper-button-next_one',
+        prevEl: '.swiper-button-prev_one',
+      },
+      
+
+    })
+    var mySwiper = new Swiper ('.swiper-container_two', {
+      slidesPerView: 10,
+      loop: true,
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: '.swiper-button-next_two',
+        // prevEl: '.swiper-button-prev_one',
+      },
+
+      breakpoints: {
+        1280: {
+          spaceBetween: 30,
+          slidesPerView: 10,
+        },
+        1035: {
+          spaceBetween: 0,
+          slidesPerView: 8,
+        },
+        320: {
+          spaceBetween: 0,
+          slidesPerView: 8,
+        }
+
+      }
+      
+
+    })
+    
+  </script>
+
+
+ 
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.hero
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 16px
+  &__baner
+    height: 160px
+    overflow: hidden
+    & img 
+      height: 100%
+      width: 100%
+    &:nth-child(1)
+      flex-basis: 68%
+      
+      
+    &:nth-child(2)
+      flex-basis: 32%
+      
+      
+
+    &:nth-child(3)
+      flex-basis: 100%
+      margin-top: 16px
+      height: 288px
+
+
+@media (max-width:1285px)
+  .hero
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 24px
+    &__baner
+      &:nth-child(3)
+        margin-top: 14px
+@media (max-width:1035px)  
+  .hero
+    display: none

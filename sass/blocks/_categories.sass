@@ -1,0 +1,107 @@
+.categories
+  margin-bottom: 53px
+  &__title
+    text-transform: uppercase
+    font-size: 32px
+    text-align: center
+    margin: 82px -14px 98px 0
+    & span
+      &:nth-child(1)
+        top: -13px
+        position: relative
+        margin-right: 3px
+        &::after
+          content: ""
+          position: absolute
+          background: #1B749F
+          right: 0
+          bottom: -5px
+          width: 144px
+          height: 8px
+      &:nth-child(2) 
+        position: relative
+        bottom: -13px
+        margin-left: 3px
+        &::after
+          content: ""
+          position: absolute
+          background: #1B749F
+          left: 0
+          top: -5px
+          width: 120px
+          height: 8px
+  &-item
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: flex-end
+    margin-bottom: 30px
+    &s
+      display: grid
+      grid-template-rows: 1fr 1fr 
+      grid-template-columns: 1fr 1fr 1fr 1fr
+    &-text
+      display: block
+    &:nth-child(8) img
+      margin-bottom: 83px
+    &__img
+    &__counter
+      display: inline-block
+      margin-top: 4px
+      width: 100%
+      text-align: right
+      font-size: 11px
+      color: #9E9E9E
+    &__title
+      font-size: 16px
+      margin: 0
+      text-decoration: underline  
+
+@media (max-width:1285px)
+  .categories
+    margin-bottom: 58px
+    &__title
+      text-transform: uppercase
+      font-size: 25px
+      text-align: center
+      margin: 82px -10px 105px 0
+      & span
+        &:nth-child(1)
+          &::after
+        &:nth-child(2)
+          &::after
+    &-item
+      &s
+      &-text
+      &__img
+        &:nth-child(4) 
+          width: 130px
+      &__counter
+      &__title
+        font-size: 15px
+@media (max-width:1035px)  
+  .categories
+    margin-bottom: 58px
+    &__title
+      font-size: 13px
+      position: ihe
+      margin: 40px 0px 40px 0
+      & span
+        &:nth-child(1)
+          margin: 0
+          &::after
+            display: none
+        &:nth-child(2)
+          margin: 0
+          width: 100%
+          &::after
+            display: none
+    &-item
+      &s
+      &-text
+      &__img
+        &:nth-child(4) 
+          width: 130px
+      &__counter
+      &__title
+        font-size: 15px

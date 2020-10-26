@@ -1,0 +1,58 @@
+* 
+  box-sizing: border-box 
+
+html 
+
+body
+  +mon
+  font-size: 16px
+  position: relative
+
+::selection
+a 
+  color: #000
+  text-decoration: none
+  cursor: pointer
+  &:hover
+    color: #1B749F
+button
+  cursor: pointer
+  background: transparent
+  border: none
+
+input
+  &:focus
+
+.title
+  text-transform: uppercase
+  font-weight: 700
+
+.blue-btn
+  background: #1B749F
+  &:hover
+    background: lighten(#1B749F, 10)
+
+.color-red
+  color: #B03030
+
+.container
+  position: relative
+  width: 1280px 
+  padding: 0 72px 
+  margin: 0 auto
+
+@media (max-width:1285px)
+  .container
+    width: 1032px
+    padding: 0 48px 
+@media (max-width:1035px)  
+  .container
+    padding: 0 17px 
+    width: 336px
+
+
+
+
+      
+
+         

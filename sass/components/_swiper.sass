@@ -1,0 +1,44 @@
+.swiper-container_one 
+  width: 100%
+  position: relative
+.swiper-button-next_one 
+  position: absolute
+  top: 42.5%
+  right: 45px
+  height: 46px
+  width: 46px
+  border: 4px solid #1B749F
+  background: #F3F3F3 url('../pictures/icon/slider-arrow.svg') no-repeat 50% center
+  &::after
+    display: none
+  &:hover
+    border: 4px solid #1f8ac0
+.swiper-button-next_two 
+  position: absolute
+  top: 61.4%
+  right: 67px
+  border: 4px solid #1B749F
+  height: 46px
+  width: 46px
+  background:  url('../pictures/icon/slider-arrow_blue.png') no-repeat 50% center
+  &::after 
+    display: none
+  &:hover
+    border: 4px solid #1f8ac0
+.swiper-button-prev_one 
+  position: absolute
+  top: 42.5%
+  left: 45px
+  height: 46px
+  width: 46px
+  border: 4px solid #1B749F
+  background: #F3F3F3 url('../pictures/icon/slider-arrow.svg') no-repeat 50% center
+  transform: rotate(180deg)
+  &:after 
+    display: none
+  &:hover
+    border: 4px solid #1f8ac0
+@media (max-width:1285px)
+  .swiper-button-next_two 
+    right: 40px
+

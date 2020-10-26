@@ -1,0 +1,382 @@
+
+.header
+  padding-top: 8px
+  font-weight: 500
+  +rob
+  &-bg
+    &::after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 50%
+      height: 210px
+      background: #ffffff8a
+      clip-path: polygon(0 0, 55% 0, 70% 100%, 0% 100%)
+      z-index: -1
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 50%
+      height: 210px
+      clip-path: polygon(0 0, 55% 0, 90% 100%, 0% 100%)
+      background: #00000009
+      z-index: -1
+  &_top
+    display: flex
+    align-items: center
+    &__logo
+      display: none
+    &__burger-btn
+      margin-right: 35px
+      margin-top: 4px
+    &__location
+      &-text1
+      &-text2
+        display: none
+      &-btn
+        margin-right: 61px
+        font-weight: 400
+        position: relative
+        &:hover
+            color: #1B749F
+        & img
+          margin-right: 8px
+          margin-bottom: -3px
+    &-nav
+      &__link
+        margin-right: 41px
+        position: relative
+        &::after
+          content: ""
+          position: absolute
+          bottom: -3px
+          left: 0
+          width: 0%
+          height: 2px
+          background: #000
+          transition: 0.1s
+        &:hover::after
+          width: 70%
+    &-user
+      margin-left: auto
+      margin-top: -3px
+      &::after
+        content: ""
+        top: 45px
+        right: 0
+        width: 33%
+        height: 2px
+        background: #1B749F
+        position: absolute
+      & img
+        margin-bottom: -9px
+        margin-right: 19px
+      &__link
+        vertical-align: center
+        margin-left: 18px
+        &:hover
+          color: #1B749F
+  &_middle
+    padding: 40px 0 28px
+    display: flex
+    align-items: center
+    position: relative
+    &__logo
+      width: 272px
+      height: 46px
+      margin-left: 2px
+      margin-right: 43px
+    &-call
+      display: flex
+      align-items: center
+      &-numbers
+        display: flex
+        flex-direction: row
+        align-items: center
+        &__icon
+          margin-bottom: -1px
+      & ul
+        display: inline-block
+        margin-right: 50px
+        padding: 0
+        vertical-align: middle
+        font-weight: 400
+        & li
+          padding-left: 12px
+          list-style-type: none
+          font-size: 20px
+          &:nth-child(3)
+            font-size: 13px
+            margin-top: 3px
+            color: #777777
+      &__btn
+        color: #ffffff
+        width: 152px
+        height: 40px
+        margin-right: 23px
+    &__search
+      &-wrap
+        position: relative
+        margin-left: auto
+        margin-right: 14px
+      width: 392px
+      height: 40px
+      padding: 10px 40px 10px 15px 
+      border: 1px solid #777777
+      font-weight: 500
+      &-btn
+        position: absolute
+        width: 40px
+        height: 40px
+        right: 0
+        top: 0
+        & img
+          margin-top: 2px
+          margin-left: 2px
+    &__shop-action
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translate( 49px, -37%)
+      display: flex
+      flex-direction: column
+      &-btn 
+        margin-bottom: 14px
+        &:nth-child(1)
+          margin-left: 2px
+          margin-bottom: 16px
+  &_bottom
+    +mon
+    padding: 16px 0 12px 
+    font-weight: 500
+    display: flex
+    &-bg
+      background: #000
+      &::after
+        content: ""
+        top: 45px
+        right: 0
+        width: 34%
+        height: 2px
+        background: #1B749F
+        position: absolute
+    &__catalog-btn
+      color: #fff
+      & img
+        margin-right: 16px
+        margin-bottom: 2px
+      &:hover
+        color:#1f8ac0
+    &-menu
+      display: flex
+      justify-content: space-between
+      width: 67.5%
+      margin-left: auto
+      margin-right: 78px
+      &__link
+        font-weight: 400
+        font-size: 14px
+        color: #fff
+      &_mobile
+        display: none
+@media (max-width:1285px)
+  .header
+    &-bg
+      &::after
+      &::before
+    &_top
+      &__burger-btn
+      &__location
+        &-text1
+          display: none
+        &-text2
+          display: block
+        &-btn
+          margin: 0 40px 0 0
+          display: flex
+          &:hover
+          & img
+            margin-right: 11px
+      &-nav
+        &__link
+          margin-right: 
+          &:nth-child(2)
+            margin-right: 38px
+          &:nth-child(3)
+            margin: 0
+          &::after
+          &:hover::after
+      &-user
+        display: flex
+        justify-content: space-between
+        &::after
+          top: 45px
+          width: 30%
+        & img
+        &__link
+          text-transform: capitalize
+          margin-left: 23px
+          &-img
+            margin-right: 20px
+          &_1 
+            display: none
+    &_middle
+      padding: 24px 0 24px
+      &__logo
+        margin-right: 50px
+        margin-top: 10px
+      &-call
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-numbers
+          &__icon
+            margin-top: -8px
+        & ul
+          margin: 0  0 12px
+          & li
+            &:nth-child(3)
+        &__btn
+          margin-right: -24px
+      &__search
+        margin-top: 9px
+        width: 352px
+        margin-right: 8px
+        &-wrap
+        &-btn
+          top: 9px
+          right: 9px
+          & img
+      &__shop-action
+        transform: translate( 35px, -37%)
+        &-btn 
+          &:nth-child(1)
+    &_bottom
+      padding: 17px 0 12px
+      &-bg
+        &::after
+          top: 45px
+          width: 31%
+      &__catalog-btn
+        margin-bottom: -1px
+        & img
+          margin: -5px 14px 0 0
+      &-menu
+        margin-right: 33px
+        width: 62%
+        &__link
+          &:nth-child(5)
+            display: none
+            
+
+
+@media (max-width:1035px)  
+  .header
+    &-bg
+      &::after
+        display: none
+      &::before
+        display: none
+    &_top
+      &__logo
+        display: block
+        margin: -2px
+      &__burger-btn
+        margin-top: 7px
+        margin-right: 26px
+        padding: 0
+        & img 
+          width: 18px 
+      &__location-btn
+        display: none
+        &-text1
+        &-text2
+        &-btn
+          &:hover
+          & img
+      &-nav
+        display: none
+        &__link
+          &::after
+          &:hover::after
+      &-user
+        margin-bottom: -5px
+        margin-top: 0px
+        margin-right: 5px
+        &::after
+          display: none
+        &__link
+          margin-left: 25px
+          & img
+            margin: 0
+          &_2
+            display: none
+          &:hover
+    &_middle
+      flex-direction: column
+      justify-content: space-between
+      padding: 14px 0
+      +mon
+      &__logo
+        display: none
+      &-call
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        &-numbers
+          display: flex
+          align-items: center
+        & ul
+          margin-bottom: 0
+          & li
+            font-size: 14px
+            padding-left: 10px
+            &:nth-child(3)
+              display: none
+        &__btn
+          width: 136px
+          height: 32px
+          font-size: 14px
+          margin-right: 0
+      &__search
+        width: 100%
+        margin: 15px 0 0
+        height: 46px
+        &-wrap
+          width: 100%
+        &-btn
+          right: 0
+          top: 15px
+          width: 46px
+          height: 46px
+          & img
+      &__shop-action
+        display: none
+        &-btn 
+          &:nth-child(1)
+    &_bottom
+      padding: 27px 0 10px
+      &-bg
+        margin-top: -35px
+        &::after
+          display: none
+      &__catalog-btn
+        display: none
+        & img
+      &-menu
+        display: none
+        &__link
+        &_mobile
+          display: flex
+          justify-content: space-between
+          color: #ffffff
+          &__link
+            color: #fff
+            font-size: 12px
+            text-align: center
+          & img
+            margin-bottom: -8px
