@@ -2017,7 +2017,7 @@ button:focus {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 25px;
+  top: 0px;
   right: 5px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2105,7 +2105,7 @@ button:focus {
     height: 1px;
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 15px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background: #7A7A7A;
